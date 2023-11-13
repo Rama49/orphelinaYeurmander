@@ -1,16 +1,9 @@
 import React from 'react'
-import { Menu, Layout} from "antd"
-import styled from 'styled-components'
+import { Menu} from "antd"
 
-const {Container} = Layout;
-
-const NavContainer = styled(Container)`
-background: #FF0390;
-`;
 
 export default function Navbar() {
     return (
-        <NavContainer>
              <Menu
         mode='horizontal'
            items={[
@@ -23,6 +16,5 @@ export default function Navbar() {
             {label: "Faire un don",  key: "Faire un don"},
         ]}
         />
-        </NavContainer>
     )
 }
