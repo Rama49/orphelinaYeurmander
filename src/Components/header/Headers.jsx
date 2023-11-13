@@ -20,7 +20,7 @@ export default function Headers() {
                     <div>
                         <p>Suivez-nous</p>
                         <Icon type="FacebookOutlined" />
-                        <div><FacebookOutlined /></div>
+                        <FacebookOutlined />
                     </div>
                 </div>
             </ContentHeader>
