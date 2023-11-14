@@ -4,6 +4,7 @@ import imageCart1 from "../assets/imagecart1.png"
 import imageCart2 from "../assets/imagecart2.png"
 import imageCart3 from "../assets/imagecart3.png"
 import imager from "../assets/imager.png"
+import Boutton from '../Components/reutilisable/Boutton';
 
 
 const container = {
@@ -31,7 +32,8 @@ export default function Cause() {
             <h1>NOS <span style={textCauses}>CAUSES</span></h1>
             <img alt="example" src={imager} />
             <p>Notre orphelinat offre de l'aide et de l'espoir aux enfants qui en ont besoin.</p>
-            <div style={cartes}>
+            
+            <div style={cartes} grid={{xs:1, sm:1, md:1, lg:3, xl:3}}>
                 <Card
                     hoverable
                     style={{
@@ -40,6 +42,7 @@ export default function Cause() {
                     cover={<img alt="example" src={imageCart1} />}
                 >
                     <Meta title="enfannts doivent recevoir une éducation" description="Lorem ipsum dolor sit amet, onsectetur adipiscing contre ectetur nulla. Sed à ullamcorper risus" />
+                    < Boutton text={"FAIRE UN DON"} />
                 </Card>
                 <Card
                     hoverable
@@ -53,6 +56,8 @@ export default function Cause() {
                 >
                     <Meta title="Apportez de l'électricité 
 et de la lumière" description="Lorem ipsum dolor sit amet, onsectetur adipiscing contre ectetur nulla. Sed à ullamcorper risus" />
+
+                    < Boutton text={"FAIRE UN DON"} />
                 </Card>
                 <Card
                     hoverable
@@ -62,6 +67,7 @@ et de la lumière" description="Lorem ipsum dolor sit amet, onsectetur adipiscin
                     cover={<img alt="example" src={imageCart2} />}
                 >
                     <Meta title="Objets porteurs d'eau" description="Lorem ipsum dolor sit amet, onsectetur adipiscing contre ectetur nulla. Sed à ullamcorper risus" />
+                    < Boutton text={"FAIRE UN DON"} />
                 </Card>
             </div>
         </div>
