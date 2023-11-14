@@ -11,7 +11,7 @@ function handleChange(value) {
 const logo = {
     width: 50
 }
-const navbar={
+const navbar = {
     justifyContent: "center",
     alignItems: "center",
     padding: 0
@@ -22,25 +22,24 @@ export default function Navbar() {
     return (
 
         <div>
-          
+
             <Menu
                 mode='horizontal'
                 style={navbar}
-               
-                items={[ 
-                    { label: < img src={Imag} alt='Imag' style={logo}/>, key: "logo", },
-                    { label: <Select defaultValue="QUI SOMMES NOUS?" onChange={handleChange}>
-                   
-                    <Option value="Qui sommes nous?" >Qui sommes nous?</Option>
-                    <Option value="Qui sommes nous?" >Qui sommes nous?</Option>
-                </Select>, key: "Qui sommes nous?" },
-                    { label: "Qui sommes nous?", key: "Qui sommes nous?" },
+
+                items={[
+                    { label: < img src={Imag} alt='Imag' style={logo} />, key: "logo", },
+                    { label: "Acceuil", key: "Acceuil" },
+
+                    {
+                        label: <Select defaultValue="Qui sommes nous?" onChange={handleChange}>
+
+                            <Option 
+                                value="QUI SOMMES NOUS?" >QUI SOMMES NOUS?</Option>
+                        </Select>, key: "Acceuil"
+                    },
                     { label: "Programmes", key: "Programmes" },
-                    { label: <Select defaultValue="Qui sommes nous?" onChange={handleChange}>
-                   
-                    <Option value="Demandes" >Demandes</Option>
-                    <Option value="Demandes" >Demandes</Option>
-                </Select>, key: "Demandes" },
+                    { label: "Demandes", key: "Demandes" },
                     { label: "Galerie", key: "Galerie" },
                     { label: "Contactez-nous", key: "Contactez-nous" },
                     { label: "Faire un don", key: "Faire un don" },
