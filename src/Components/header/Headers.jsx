@@ -25,8 +25,7 @@ const { Header } = Layout;
 const ContentHeader = styled(Header)`
 background: #FF0390;
 color: white;
-vertical-align: "middle";
-padding-bottom: 20,
+height: 20
 `;
 const Container = {
     display: 'flex', 
@@ -34,13 +33,20 @@ const Container = {
     verticalALign: "middle"
 };
 const containerIcons = {
-    display: 'flex'
+    display: 'flex',
+    justifyContent: "space-around",
 }
 const facebook = {
     color: "white",
     padding: 15,
     fontSize: 15,
     borderColor: "none"
+};
+const iconsbas= {
+    display: 'flex'
+};
+const iconsleft= {
+    padding: 10
 };
 const inputselect = {
     opacity: 0,
@@ -70,12 +76,12 @@ export default function Headers() {
                         <a href="#"><LinkedinOutlined style={facebook} /></a>
                     </div>
                 </div>
-                <div style={{ display: 'flex' }}>
-                    <div style={{ padding: 10 }}>
+                <div style={iconsbas}>
+                    <div style={iconsleft}>
                         <a href="#"><MailOutlined style={facebook}/></a>
                         <span>E-mail: keuryeurmande@gmail.com</span>
                     </div>
-                    <div style={{ padding: 10 }}>
+                    <div style={iconsleft}>
                         <a href="#"><PhoneOutlined style={facebook} /></a>
                         <span>Telephone: +221 77 777 77 77</span>
                     </div>
