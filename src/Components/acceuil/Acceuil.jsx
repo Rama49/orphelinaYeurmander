@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from "antd"
 import styled from 'styled-components'
-import Image from "../../assets/background.png"
+import Image from "../../assets/backgoundAcceuil.png"
 
 const {Content} = Layout;
 

@@ -13,7 +13,7 @@ export default function Navbar() {
             alignItems: "center",
           }}
            items={[
-            < img src={Imag} />,
+            < img src={Imag} alt='Imag' />,
             {label: "Acceuil",  key: "Acceuil"},
             {label: "Qui sommes nous?",  key: "Qui sommes nous?"},
             {label: "Programmes",  key: "Programmes"},
